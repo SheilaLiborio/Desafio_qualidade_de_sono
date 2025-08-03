@@ -1,41 +1,75 @@
-# Desafio Final : Qualidade do Sono
-## **Contexto:**
-Você trabalha como cientista de dados para uma empresa de saúde digital.
-Seu time recebeu um conjunto de dados de um estudo com adultos que
-monitoraram seus hábitos de vida e padrões de sono. A empresa deseja
-desenvolver um sistema de alerta para pessoas com potencial risco de má
-qualidade de sono.
-## **Objetivo:**
-Construir um modelo de machine learning que **classifique a qualidade do
-sono** (por exemplo,"Boa", "Moderada", "Ruim") com base em variáveis de
-estilo de vida e saúde. Onde:
-- Ruim - 0-4
-- Moderada - 5-6
-- Boa - 7-10
-## **Tarefas:**
-1. Análise Exploratória:
-- Verificar distribuição das variáveis.
-- Quais variáveis mais se correlacionam com a qualidade do
-sono?
-- Existem diferenças de padrão entre homens e mulheres? E
-entre faixas etárias?
-2. Pré-processamento:
-- Tratar dados faltantes, se houver.
-- Codificar variáveis categóricas e normalizar dados numéricos.
-3. Modelagem:
-- Criar um modelo de classificação (ex: Random Forest, Logistic
-Regression, etc.).
-- Avaliar o modelo com métricas como Acurácia, Precision, Recall
-e Matriz de Confusão.
-- Neste tipo de problema, qual a melhor métrica de avaliação
-para considerar durante a escolha do melhor modelo?
-4. Interpretação:
-- Quais variáveis mais impactam positivamente e negativamente
-a qualidade do sono?
-- Faça recomendações com base nos dados analisados.
-5. Sugestões:
-- Faça todos os tratamentos de dados que achar adequado para
-as análises, visualizações e modelagens.
-- Não se esqueça de estruturar e comentar seu código.
-Se atente aos detalhes dos gráficos (Paleta de cores, rótulos e
-títulos dos gráficos).
+# 💤 Classificação da Qualidade do Sono
+
+Projeto desenvolvido como desafio final de um bootcamp em Análise de Dados, com foco na construção de um modelo de machine learning capaz de classificar a qualidade do sono com base em variáveis de estilo de vida e saúde.
+
+## 🧠 Objetivo
+
+Criar um sistema de alerta que classifique a qualidade do sono como:
+- **Boa** (7 a 10)
+- **Moderada** (5 a 6)
+- **Ruim** (0 a 4)
+
+Utilizando dados de hábitos de vida monitorados por adultos.
+
+---
+
+## 📊 Etapas do Projeto
+
+### 1. Análise Exploratória
+- Verificação da distribuição das variáveis
+- Correlação entre hábitos e qualidade do sono
+- Comparação entre gêneros e faixas etárias
+
+### 2. Pré-processamento
+- Tratamento de dados faltantes
+- Codificação de variáveis categóricas
+- Normalização de variáveis numéricas
+
+### 3. Modelagem
+- Classificação com **Random Forest**
+- Avaliação com **Acurácia**, **Precision**, **Recall** e **Matriz de Confusão**
+- Análise de importância das variáveis
+
+### 4. Recomendações
+- Geração de insights com base nas variáveis mais relevantes
+- Sugestões de ações para melhoria da qualidade do sono
+
+---
+
+## ⚙️ Tecnologias e Bibliotecas Utilizadas
+
+- Python
+- pandas, NumPy
+- matplotlib, seaborn
+- scikit-learn
+
+---
+
+## 📁 Organização dos Arquivos
+
+| Arquivo | Descrição |
+|--------|------------|
+| `Desafio_Final_qualidade_sono.ipynb` | Código principal do projeto com análise, modelagem e interpretações |
+| `Sleep_health_and_lifestyle_dataset.csv` | Dataset utilizado|
+| `README.md` | Este documento |
+
+---
+
+## 🧩 Próximos passos
+
+- Testar outros modelos (XGBoost)
+- Criar dashboard interativo
+  
+---
+
+## 👩‍💻 Autora
+
+Sheila Liborio  
+Engenheira com experiência em suporte técnico e projetos de dados.  
+[LinkedIn](https://www.linkedin.com/in/sheilaliborio)
+
+---
+
+## 📌 Observações
+
+Este projeto foi realizado com fins educacionais e pode ser expandido para aplicações reais com dados mais robustos e controle clínico.
